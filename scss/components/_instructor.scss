@@ -1,0 +1,43 @@
+@use "../abstracs/variabeles";
+@use "../abstracs/mixins";
+
+.instructor{
+    margin-top: 5rem;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+
+    &__img{
+        object-fit: cover;
+        height: 50rem;
+        width: 40rem;
+    }
+
+    &__h2{
+        font-size: 350%;
+        margin-left: 8rem;
+        margin-top: 5rem;
+    }
+
+    &__p{
+        font-size: 250%;
+        max-width: 40rem;
+        margin-left: 8rem;
+        margin-top: 2rem;
+    }
+
+    &__figure{
+        @include mixins.flexcenter;
+        font-size: 1.5rem;
+        width: 23rem;
+        height: 4rem;
+        border-style: solid  ;
+        border-color: variabeles.$color--black;
+        border-width: 0.2rem;
+        font-weight: bold;
+        background: variabeles.$color--black;
+        color: variabeles.$color--white;
+        margin-left: 8rem;
+        margin-top: 2rem;
+    }
+}

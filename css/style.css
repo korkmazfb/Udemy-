@@ -1,0 +1,820 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #EEEEEE;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+}
+.header__ul {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0.5rem 0.5rem 3rem 0rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  list-style: none;
+}
+.header__udemy {
+  padding: 1rem;
+  font-size: 4rem;
+}
+.header__li {
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.header__li:hover {
+  color: #6C4AB6;
+  cursor: pointer;
+}
+.header__search {
+  margin-top: 1rem;
+  width: 70rem;
+  height: 5rem;
+  border-style: solid;
+  border-radius: 2rem;
+  border-color: #1c1d1f;
+  border-width: 0.2rem;
+  display: flex;
+}
+.header__icon {
+  width: 3rem;
+  height: 3rem;
+  z-index: 1;
+  color: #1c1d1f;
+}
+.header__p {
+  margin-top: 1rem;
+  font-size: 200%;
+  padding: 0.5rem;
+}
+.header__winkelwagen {
+  display: flex;
+  margin-top: 3.2rem;
+  margin-right: 1.5rem;
+  font-size: 200%;
+}
+.header__figures {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.header__figure {
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  border-style: solid;
+  border-color: #1c1d1f;
+  border-width: 0.2rem;
+  font-weight: bold;
+}
+.header__figure--inschrijven {
+  background: #1c1d1f;
+  color: white;
+}
+.header__bol {
+  padding: 1rem;
+  font-size: 150%;
+  margin-top: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-style: solid;
+  border-color: #1c1d1f;
+  border-width: 0.2rem;
+  font-weight: bold;
+}
+
+.udemy__home {
+  max-height: 40rem;
+}
+.udemy__figurehomeimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.udemy__homeimg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.udemy__div {
+  padding: 2.4rem;
+  width: 45rem;
+  height: 20rem;
+  background: #F9F9F9;
+  z-index: 1;
+  position: relative;
+  border-radius: 0.5rem;
+  bottom: 32.5rem;
+  left: 12rem;
+  box-shadow: 0.5rem 0.5rem 2rem 0.1rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.udemy__h2 {
+  font-size: 350%;
+}
+.udemy__p {
+  font-size: 200%;
+}
+
+.curcussen {
+  left: 13rem;
+  width: 120rem;
+  position: relative;
+}
+.curcussen__h2 {
+  font-size: 400%;
+  padding-top: 4rem;
+}
+.curcussen__p {
+  font-size: 230%;
+}
+
+.tabel {
+  display: flex;
+  position: relative;
+  top: 2rem;
+  left: 13rem;
+  width: 120rem;
+}
+.tabel__table {
+  display: flex;
+  gap: 4rem;
+}
+.tabel__tabs {
+  font-size: 200%;
+}
+.tabel__tabs:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.tabel__figure {
+  position: relative;
+  top: 2rem;
+  left: 13rem;
+  margin-top: 3rem;
+  width: 120rem;
+  height: 25rem;
+  border: solid 0.01rem #1c1d1f;
+  padding: 2rem;
+}
+.tabel__wrapper {
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.tabel__h2 {
+  font-size: 350%;
+}
+.tabel__p {
+  font-size: 200%;
+}
+.tabel__p2 {
+  color: #1c1d1f;
+}
+.tabel__button {
+  width: 100%;
+  font-size: 180%;
+  padding: 1rem;
+  width: 15rem;
+  height: 5rem;
+  border-style: solid;
+  border-color: #1c1d1f;
+  border-width: 0.2rem;
+}
+.tabel__button:hover {
+  background: #DDDDDD;
+  cursor: pointer;
+}
+
+.studenten {
+  display: flex;
+  position: relative;
+  top: 2rem;
+  left: 13rem;
+  width: 120rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.studenten__student {
+  max-width: 26rem;
+}
+.studenten__h2 {
+  margin-top: 5rem;
+  font-size: 250%;
+  top: 2rem;
+  left: 13rem;
+  width: 120rem;
+  position: relative;
+}
+.studenten__img {
+  width: 26rem;
+  height: 15rem;
+  object-fit: cover;
+  box-shadow: 0.2rem 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+.studenten__img:hover {
+  cursor: pointer;
+}
+.studenten__h3 {
+  font-size: 200%;
+}
+.studenten__description {
+  font-size: 125%;
+}
+.studenten__wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+.studenten__getal {
+  font-size: 130%;
+  color: red;
+}
+.studenten__getal2 {
+  font-size: 130%;
+}
+.studenten__stars {
+  font-size: 130%;
+  color: gold;
+}
+.studenten__prijs {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 170%;
+}
+
+.catogorie {
+  position: relative;
+  top: 2rem;
+  left: 13rem;
+  width: 120rem;
+  gap: 2rem;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.catogorie__h2 {
+  margin-top: 8rem;
+  position: relative;
+  top: 2rem;
+  left: 13rem;
+  width: 120rem;
+  font-size: 280%;
+}
+.catogorie__img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  transition: 0.2s transform;
+}
+.catogorie img:hover {
+  transform: scale(1.05);
+}
+.catogorie__background {
+  width: 30rem;
+  height: 30rem;
+  background: #F9F9F9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.catogorie__h3 {
+  font-size: 200%;
+  font-size: bold;
+}
+
+.onderwerpen {
+  position: relative;
+  top: 2rem;
+  left: 13rem;
+  width: 120rem;
+  display: flex;
+  gap: 8rem;
+}
+.onderwerpen__h2 {
+  margin-top: 8rem;
+  position: relative;
+  top: 2rem;
+  left: 13rem;
+  width: 120rem;
+  font-size: 280%;
+}
+.onderwerpen__p {
+  color: #1c1d1f;
+}
+.onderwerpen__h3 {
+  font-size: 230%;
+}
+.onderwerpen__onderwerp {
+  width: 25rem;
+  height: 30rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.onderwerpen__wrapper {
+  margin-top: 2rem;
+}
+.onderwerpen__link {
+  font-size: 200%;
+  color: #5624d0;
+  text-decoration: underline #5624d0;
+  text-underline-position: under;
+}
+.onderwerpen__link:hover {
+  cursor: pointer;
+}
+.onderwerpen__studenten {
+  margin-top: 1rem;
+  font-size: 150%;
+}
+.onderwerpen__figure {
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 25rem;
+  height: 4rem;
+  border-style: solid;
+  border-color: #1c1d1f;
+  border-width: 0.2rem;
+  font-weight: bold;
+  position: relative;
+  left: 13rem;
+  display: flex;
+}
+.onderwerpen__figure:hover {
+  background: #DDDDDD;
+  cursor: pointer;
+}
+
+.teams {
+  margin-top: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 15rem;
+}
+.teams__h2 {
+  font-size: 270%;
+}
+.teams__p {
+  font-size: 200%;
+}
+.teams__images {
+  margin-top: 1rem;
+  display: flex;
+  gap: 18rem;
+}
+.teams__img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+}
+
+.business {
+  margin: 0 auto 3rem;
+  width: 60%;
+  display: flex;
+}
+.business__h2 {
+  font-size: 280%;
+  margin-bottom: 2rem;
+}
+.business__p {
+  font-size: 300%;
+}
+.business__rondjewrapper {
+  display: flex;
+}
+.business__rondje {
+  font-size: 40%;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+.business__description {
+  margin-top: 1rem;
+  font-size: 200%;
+  margin-bottom: 2rem;
+}
+.business__wrapper {
+  flex-direction: column;
+  max-width: 35rem;
+}
+.business__img {
+  object-fit: cover;
+  width: 40rem;
+  height: 45rem;
+  margin-left: 14rem;
+}
+.business__figures {
+  display: flex;
+  gap: 3rem;
+}
+.business__figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 23rem;
+  height: 4rem;
+  border-style: solid;
+  border-color: #1c1d1f;
+  border-width: 0.2rem;
+  font-weight: bold;
+}
+.business__figure--black {
+  background: #1c1d1f;
+  color: #F9F9F9;
+}
+
+.instructor {
+  margin-top: 5rem;
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+}
+.instructor__img {
+  object-fit: cover;
+  height: 50rem;
+  width: 40rem;
+}
+.instructor__h2 {
+  font-size: 350%;
+  margin-left: 8rem;
+  margin-top: 5rem;
+}
+.instructor__p {
+  font-size: 250%;
+  max-width: 40rem;
+  margin-left: 8rem;
+  margin-top: 2rem;
+}
+.instructor__figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 23rem;
+  height: 4rem;
+  border-style: solid;
+  border-color: #1c1d1f;
+  border-width: 0.2rem;
+  font-weight: bold;
+  background: #1c1d1f;
+  color: #F9F9F9;
+  margin-left: 8rem;
+  margin-top: 2rem;
+}
+
+.footer {
+  background: #1c1d1f;
+  width: 100%;
+  height: 33rem;
+  margin-top: 15rem;
+}
+.footer__wrapper {
+  display: flex;
+}
+.footer__ul {
+  display: flex;
+  color: white;
+  font-size: 150%;
+  margin-left: 3rem;
+  padding: 4rem;
+  gap: 1rem;
+  list-style: none;
+  flex-direction: column;
+}
+.footer__li:hover {
+  cursor: pointer;
+  text-decoration: underline #F9F9F9;
+  text-underline-position: under;
+}
+.footer__figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 15rem;
+  height: 4rem;
+  border-style: solid;
+  border-color: #F9F9F9;
+  border-width: 0.2rem;
+  font-weight: bold;
+  margin-top: 3.5rem;
+  position: relative;
+  left: 60rem;
+  color: #F9F9F9;
+}
+.footer__globe {
+  margin-right: 1rem;
+}
+.footer__wrapper2 {
+  display: flex;
+}
+.footer__logo {
+  color: #F9F9F9;
+  margin-left: 7rem;
+  margin-top: 4rem;
+  font-size: 300%;
+}
+.footer__p3 {
+  color: #F9F9F9;
+  margin-top: 5rem;
+  margin-left: 115rem;
+}
+
+@media screen and (max-width: 68.75rem) {
+  .catogorie__h2 {
+    width: none;
+    left: 0;
+    margin: 0 auto 3rem;
+    width: 60%;
+  }
+  .tabel__figure {
+    width: none;
+    left: 0;
+    height: 70rem;
+    margin-bottom: 3rem;
+  }
+  .tabel__wrapper {
+    height: 100%;
+  }
+  .tabel {
+    width: none;
+    left: 0;
+  }
+  .studenten__h2 {
+    left: 0;
+    margin: 0 auto 3rem;
+    width: 60%;
+  }
+  .studenten {
+    left: 0;
+    margin: 0 auto 3rem;
+    width: 60%;
+  }
+  .onderwerpen {
+    width: none;
+    left: 0;
+  }
+  .onderwerpen__h2 {
+    left: 0;
+    width: none;
+  }
+  .curcussen {
+    width: 10rem;
+    left: none;
+  }
+  .catogorie__h2 {
+    width: 100%;
+  }
+  .catogorie {
+    width: none;
+    left: 0;
+  }
+  .footer__figure {
+    display: none;
+  }
+  .footer__wrapper2 {
+    display: none;
+  }
+  .udemy__figurehomeimg {
+    display: none;
+  }
+  .header__ul {
+    flex-wrap: wrap;
+  }
+  .header__search {
+    display: none;
+  }
+  .udemy {
+    display: flex;
+    justify-content: center;
+    flex: column;
+    flex-wrap: wrap;
+    width: none;
+    left: none;
+    position: none;
+  }
+  .curcussen__p {
+    width: 40rem;
+  }
+  .tabel__p {
+    width: 40rem;
+  }
+  .tabel__wrapper {
+    width: 100%;
+  }
+  .tabel__figure {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    width: none;
+    height: none;
+  }
+  .studenten {
+    flex-wrap: wrap;
+  }
+  .catogorie {
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 0;
+  }
+  .onderwerpen {
+    flex-wrap: wrap;
+  }
+  .teams {
+    flex-wrap: wrap;
+  }
+  .teams__images {
+    flex-wrap: wrap;
+  }
+  .business {
+    flex-wrap: wrap;
+  }
+  .instructor {
+    left: 27rem;
+  }
+  .instructor__img {
+    display: none;
+  }
+  .business__img {
+    display: none;
+  }
+  .footer {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 50rem) {
+  .curcussen {
+    width: 25rem;
+    position: relative;
+    left: 5rem;
+  }
+  .tabel__table {
+    flex-wrap: wrap;
+  }
+  .tabel__figure {
+    width: 40rem;
+    height: 60rem;
+  }
+  .tabel {
+    width: 100%;
+    height: 100%;
+  }
+  .tabel__p {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 40rem) {
+  .tabel__figure {
+    width: 40rem;
+    height: 70rem;
+    position: relative;
+    left: 5rem;
+  }
+  .tabel__h2 {
+    width: 100%;
+  }
+  .onderwerpen {
+    position: relative;
+    left: 3rem;
+  }
+  .onderwerpen__h2 {
+    position: relative;
+    left: 3rem;
+  }
+  .catogorie {
+    position: relative;
+    left: 3rem;
+  }
+  .business {
+    left: 12rem;
+  }
+  .instructor {
+    left: 5rem;
+  }
+}
+@media screen and (max-width: 31.25rem) {
+  .header__ul {
+    flex-direction: column;
+  }
+  .tabel__table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .catogorie {
+    width: 100%;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .catogorie__h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .catogorie__background {
+    width: 31rem;
+  }
+  .catogorie__h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .onderwerpen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .teams {
+    margin-left: 5rem;
+  }
+  .onderwerpen__figure {
+    align-items: center;
+  }
+  .curcussen {
+    width: 25rem;
+    position: relative;
+    left: 3rem;
+  }
+  .studenten {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  .studenten__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    object-fit: cover;
+  }
+  .studenten__student {
+    width: 35rem;
+  }
+  .curcussen__p {
+    width: 20rem;
+  }
+  .onderwerpen__figure {
+    position: relative;
+    left: 5rem;
+  }
+  .onderwerpen__h2 {
+    left: 0;
+    width: none;
+  }
+  .onderwerpen {
+    width: none;
+    left: 0;
+  }
+  .teams__img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .business {
+    left: 7.5rem;
+  }
+  .instructor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__ul {
+    padding: 1rem;
+  }
+  .tabel__figure {
+    left: 0;
+  }
+  .business__wrapper {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

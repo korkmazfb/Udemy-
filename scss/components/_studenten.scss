@@ -1,0 +1,76 @@
+@use "../abstracs/variabeles";
+
+
+.studenten{
+    display: flex;
+    position: relative;
+    top: 2rem;
+    left: 13rem;
+    width: 120rem;
+    gap: 2rem;
+    margin-top: 2rem;   
+
+    &__student{
+        max-width:26rem ;
+
+    }
+
+    &__h2{
+        margin-top: 5rem;
+        font-size: 250%;
+        top: 2rem;
+        left: 13rem;
+        width: 120rem;
+        position: relative;
+    }
+
+    &__img{
+        width: 26rem;
+        height: 15rem;
+        object-fit:cover ;
+        box-shadow: 0.2rem 0.2rem 0.3rem 0.2rem rgba(0,0,0,0.2);
+
+        
+        &:hover{
+            
+            cursor: pointer;
+
+        }
+
+        
+    }
+
+    &__h3{
+        font-size: 200%;
+    }
+
+    &__description{
+        font-size: 125%;
+    }
+
+    
+    &__wrapper{
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    &__getal{
+        font-size: 130%;
+        color: variabeles.$color--red;
+    }
+
+    &__getal2{
+        font-size: 130%;
+    }
+
+    &__stars{
+        font-size: 130%;
+        color: variabeles.$color--gold;
+    }
+
+    &__prijs{
+        margin-top: 0.5rem;
+        font-weight: bold;
+        font-size: 170%;
+    }
+}

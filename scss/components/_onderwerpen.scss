@@ -1,0 +1,84 @@
+@use "../abstracs/variabeles";
+
+
+.onderwerpen{
+    position: relative;
+    top: 2rem;
+    left: 13rem;
+    width: 120rem;
+    display: flex;
+    gap: 8rem;
+
+    
+    &__h2{
+        margin-top: 8rem;
+        position: relative;
+        top: 2rem;
+        left: 13rem;
+        width: 120rem;
+        font-size: 280%;
+    }
+
+    &__p{
+        color: variabeles.$color--black;
+       
+
+    }
+
+    &__h3{
+        font-size:230% ;
+
+    }
+
+    &__onderwerp{
+        width: 25rem;
+        height: 30rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &__wrapper{
+        margin-top: 2rem;
+    }
+
+    &__link{
+        font-size: 200%;
+        color: variabeles.$color--link;
+        text-decoration: underline variabeles.$color--link;
+        text-underline-position: under;
+
+       &:hover{
+        cursor:pointer;
+       }
+    }
+
+    
+
+    &__studenten{
+        margin-top: 1rem;
+        font-size: 150%;
+
+    }
+
+    &__figure{
+        padding: 1rem;
+        font-size: 1.5rem;
+        width: 25rem;
+        height: 4rem;
+        border-style: solid  ;
+        border-color: variabeles.$color--black;
+        border-width: 0.2rem;
+        font-weight: bold;
+        position: relative;
+        left: 13rem;
+        display: flex;
+
+        &:hover{
+            background: #DDDDDD;
+            cursor: pointer;
+
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@use "../abstracs/variabeles";
+
+.header{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+
+
+    &__ul{
+        width: 100%;
+        height: 100%;
+        box-shadow: 0.5rem 0.5rem 3rem 0rem rgba(0,0,0,0.2);
+        display: flex;
+        list-style: none;
+    
+
+
+    }
+
+
+    &__udemy{
+        padding: 1rem;
+        font-size: 4rem;
+    }
+
+    &__li{
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+
+        &:hover{
+            color: variabeles.$backgroundColor--li;
+            cursor: pointer;
+
+        }
+    }
+
+   
+
+    &__search{
+        margin-top: 1rem;
+        width: 70rem;
+        height: 5rem;
+        border-style: solid  ;
+        border-radius: 2rem;
+        border-color: variabeles.$color--black;
+        border-width: 0.2rem;
+        display: flex;
+
+    }
+
+    &__icon{
+      width: 3rem;
+      height: 3rem;
+      z-index: 1;
+      color: variabeles.$color--black;
+    }
+
+    &__p{
+        margin-top: 1rem;
+        font-size: 200%;
+        padding: 0.5rem;
+    }
+
+    &__winkelwagen{
+        display: flex;
+        margin-top: 3.2rem;
+        margin-right: 1.5rem;
+        font-size: 200%;
+    }
+
+    &__figures{
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 1rem;
+
+        
+    }
+
+    &__figure{
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        border-style: solid  ;
+        border-color: variabeles.$color--black;
+        border-width: 0.2rem;
+        font-weight: bold;
+
+        &--inschrijven{
+            background: variabeles.$color--black;
+            color: white;
+        }
+       
+    
+    }
+
+    &__bol{
+        padding: 1rem;
+        font-size: 150%;
+        margin-top: 2rem;
+        width: 4rem;
+        height: 4rem;
+        border-style: solid  ;
+        border-color: variabeles.$color--black;
+        border-width: 0.2rem;
+        font-weight: bold;
+
+    }
+
+   
+
+
+    
+}
+

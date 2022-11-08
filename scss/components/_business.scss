@@ -1,0 +1,79 @@
+@use "../abstracs/variabeles";
+@use "../abstracs/mixins";
+
+.business{
+
+    margin: 0 auto 3rem;
+    width: 60%;
+
+    display: flex;
+ 
+
+    &__h2{
+        font-size: 280%;
+        margin-bottom:  2rem;
+
+
+    }
+
+    &__p{
+        font-size: 300%;
+
+    }
+
+    &__rondjewrapper{
+        display: flex;
+    }
+
+    &__rondje{
+        font-size: 40%;
+        margin-right: 1rem;
+        margin-top: 2rem;
+    }
+
+    &__description{
+        margin-top: 1rem;
+        font-size: 200%;
+        margin-bottom: 2rem;
+    }
+
+    &__wrapper{
+        flex-direction: column;    
+        max-width: 35rem;
+        
+
+    }
+
+    &__img{
+        object-fit: cover;
+        width: 40rem;
+        height: 45rem;
+        margin-left: 14rem;
+
+    }
+
+    &__figures{
+        display: flex;
+        gap: 3rem;
+    }
+
+    &__figure{
+        @include mixins.flexcenter;
+        font-size: 1.5rem;
+        width: 23rem;
+        height: 4rem;
+        border-style: solid  ;
+        border-color: variabeles.$color--black;
+        border-width: 0.2rem;
+        font-weight: bold;
+
+        &--black{
+            background: variabeles.$color--black;
+            color: variabeles.$color--white;
+        }
+    }
+
+   
+
+    
+}

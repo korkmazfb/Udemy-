@@ -1,0 +1,284 @@
+@use '../abstracs/mixins';
+
+@media screen and (max-width: 68.75rem){
+    .catogorie__h2{
+        width: none;
+        left: 0;
+        margin: 0 auto 3rem;
+        width: 60%;
+        
+    }
+    .tabel__figure{
+        width: none;
+        left: 0;
+        height:70rem;
+        margin-bottom: 3rem;
+    }
+    .tabel__wrapper{
+        height: 100%;
+    }
+    .tabel{
+        width: none;
+        left: 0;
+
+    }
+    .studenten__h2{
+        left: 0;
+        margin: 0 auto 3rem;
+        width: 60%;
+    }
+    .studenten{
+        left: 0;
+        margin: 0 auto 3rem;
+        width: 60%;
+    }
+    .onderwerpen{
+        width: none;
+        left: 0;
+    }
+    .onderwerpen__h2{
+        left: 0;
+        width: none;
+    }
+    .curcussen{
+        width: 10rem;
+        left: none;
+    }
+    .catogorie__h2{
+        width: 100%;
+    }
+    .catogorie{
+        width: none;
+        left: 0;
+    }
+
+    .footer__figure{
+        display: none;
+    }
+    .footer__wrapper2{
+        display: none;
+    }
+    
+    .udemy__figurehomeimg{
+        display: none;
+    }
+    .header__ul{
+        flex-wrap: wrap;
+    }
+    .header__search{
+        display: none;
+    }
+
+    .udemy{
+        display: flex;
+        justify-content: center;
+        flex: column;
+        flex-wrap: wrap;
+        width: none;
+        left: none;
+        position: none;
+
+    }
+    .curcussen__p{
+        width: 40rem;
+    }
+    .tabel__p{
+        width: 40rem;
+    }
+    .tabel__wrapper{
+        width: 100%;
+    }
+    .tabel__figure{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        width: none;
+        height: none;
+    }
+    .studenten{
+        flex-wrap: wrap;
+    }
+    .catogorie{
+        flex-wrap: wrap;
+        justify-content: center;
+        left: 0;
+    }
+    .onderwerpen{
+        flex-wrap: wrap;
+    }
+    .teams{
+        flex-wrap: wrap;
+    }
+    .teams__images{
+        flex-wrap: wrap;
+    }
+    .business{
+        flex-wrap: wrap;
+    }
+    .instructor{
+        left: 27rem;
+    }
+    .instructor__img{
+        display: none;
+    }
+    .business__img{
+        display: none;
+    }
+    .footer{
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 50rem){
+    .curcussen{
+        width: 25rem;
+        position: relative;
+        left: 5rem;
+    }
+    .tabel__table{
+        flex-wrap: wrap;
+    }
+    .tabel__figure{
+        width: 40rem;
+        height: 60rem;
+    }
+    .tabel{
+        width: 100%;
+        height: 100%;
+    }
+    .tabel__p{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 40rem){
+    
+
+    .tabel__figure{
+        width: 40rem;
+        height: 70rem;
+        position: relative;
+        left: 5rem;
+    }
+    .tabel__h2{
+        width: 100%;
+    }
+    .onderwerpen{
+        position: relative;
+        left: 3rem;
+    }
+    .onderwerpen__h2{
+        position: relative;
+        left: 3rem;
+
+    }
+    .catogorie{
+        position: relative;
+        left: 3rem;
+
+    }
+    .business{
+        left: 12rem;
+    }
+    .instructor{
+        left: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 31.25rem){
+.header__ul{
+    flex-direction: column;
+
+}
+.tabel__table{
+    @include mixins.flexcenter;
+}
+.catogorie{
+    width: 100%;
+    margin-right: 3rem;
+    @include mixins.flexcenter;
+}
+.catogorie__h2{
+    @include mixins.flexcenter;
+}
+.catogorie__background{
+    width: 31rem;
+}
+.catogorie__h2{
+    @include mixins.flexcenter;
+}
+.onderwerpen{
+    @include mixins.flexcenter;
+    gap: 2rem;
+
+}
+.teams{
+    margin-left: 5rem;
+}
+.onderwerpen__figure{
+    align-items: center;
+}
+.curcussen{
+    width: 25rem;
+    position: relative;
+    left: 3rem;
+}
+.studenten{
+    @include mixins.flexcenter;
+
+    width: 80%;
+}
+.studenten__img{
+    @include mixins.flexcenter;
+    width: 100%;
+    object-fit: cover;
+}
+
+.studenten__student{
+    width: 35rem;
+}
+
+.curcussen__p{
+    width: 20rem;
+}
+.onderwerpen__figure{
+    position: relative;
+    left: 5rem;
+    
+}
+.onderwerpen__h2{
+    left: 0;
+    width: none;
+}
+.onderwerpen{
+    width: none;
+    left: 0;
+}
+.teams__img{
+    width: 10rem;
+    height: 10rem;
+}
+.business{
+    left: 7.5rem;
+}
+.instructor{
+    @include mixins.flexcenter;
+    flex-direction: column;
+
+}
+.footer__ul{
+    padding: 1rem;
+}
+.tabel__figure{
+    left: 0;
+}
+.business__wrapper{
+    width: 100%;
+}
+
+}
+
